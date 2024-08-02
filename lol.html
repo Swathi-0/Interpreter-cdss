@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mermaid Flowchart</title>
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+</head>
+<body>
+  <div class="mermaid">
+    flowchart TD
+        A[Start] --> B[Lexical Analysis]
+        B --> C[Syntax Analysis]
+        C --> D[Semantic Analysis]
+        D --> E[Intermediate Code Generation]
+        E --> F[Optimization]
+        F --> G[Code Generation]
+        G --> H[Execution]
+        H --> I[End]
+
+        B --> B1[Tokenization]
+        B1 --> B2[Error Handling]
+
+        C --> C1[Parsing]
+        C1 --> C2[Abstract Syntax Tree (AST)]
+
+        D --> D1[Symbol Table Construction]
+        D1 --> D2[Type Checking]
+        D2 --> D3[Error Handling]
+
+        E --> E1[AST Traversal]
+        E1 --> E2[Generate Intermediate Code]
+
+        F --> F1[Code Analysis]
+        F1 --> F2[Apply Optimizations]
+
+        G --> G1[Target Code Generation]
+        G1 --> G2[Machine Code / Bytecode]
+
+        H --> H1[Interpret or Execute Code]
+        H1 --> H2[Runtime Error Handling]
+  </div>
+</body>
+</html>

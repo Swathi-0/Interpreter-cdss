@@ -1,0 +1,10 @@
+FUN factorial(n)
+    IF n == 0 THEN
+        RETURN 1
+    ELSE
+        RETURN n * factorial(n - 1)
+    END
+END
+
+VAR result = factorial(5)
+PRINT(result)
