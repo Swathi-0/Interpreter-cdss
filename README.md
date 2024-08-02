@@ -1,2 +1,2 @@
 # Interpreter-cdss
-A Basic ide interpreter 
+A BASIC (Beginners' All-purpose Symbolic Instruction Code) ide interpreter 
